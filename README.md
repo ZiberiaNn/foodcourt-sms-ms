@@ -29,13 +29,13 @@ To get a local copy up and running follow these steps.
 * Postman [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
 ### Installation
-
-1. Clone the repo
-2. Change directory
+1. Clone https://github.com/ZiberiaNn/foodcourt-users-ms repo, follow its instructions and run the microservice
+2. Clone the repo
+3. Change directory
    ```sh
    cd foodcourt-sms-ms
    ```
-3. Edit src/main/resources/application.yml and change the Twilio credentials
+4. Edit src/main/resources/application.yml and change the Twilio credentials
    ```sh
    twilio:
      accountSid: <your account sid>
