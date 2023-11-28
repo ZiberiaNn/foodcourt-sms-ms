@@ -2,7 +2,7 @@
 <div align="center">
 <h3 align="center">FoodCourt SMS microservice</h3>
   <p align="center">
-    In this challenge you are going to design the backend of a system that centralizes the services and orders of a restaurant chain that has different branches in the city.
+     SMS microservice for sending SMS to FoodCourt users phone with Twilio
   </p>
 </div>
 
