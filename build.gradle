@@ -20,6 +20,7 @@ repositories {
 }
 
 ext {
+	springCloudVersion = "2021.0.3"
 	springBootVersion = "2.7.3"
 	mapstructVersion = "1.5.2.Final"
 	lombokVersion = "1.18.24"
@@ -31,6 +32,9 @@ dependencies {
 	implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
 	developmentOnly "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
 	testImplementation "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+	implementation "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
 	implementation 'com.twilio.sdk:twilio:8.29.1'
 
 
@@ -42,6 +46,12 @@ dependencies {
 
 	implementation "org.springdoc:springdoc-openapi-ui:${openApiVersion}"
 	implementation "org.springdoc:springdoc-openapi-webflux-ui:${openApiVersion}"
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
 }
 
 tasks.named('test') {
