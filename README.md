@@ -23,7 +23,6 @@ To get a local copy up and running follow these steps.
 
 * JDK 11 [https://jdk.java.net/java-se-ri/11](https://jdk.java.net/java-se-ri/11)
 * Gradle [https://gradle.org/install/](https://gradle.org/install/)
-* MySQL [https://dev.mysql.com/downloads/installer/](https://dev.mysql.com/downloads/installer/)
 
 ### Recommended Tools
 * IntelliJ Community [https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/)
@@ -34,7 +33,7 @@ To get a local copy up and running follow these steps.
 1. Clone the repo
 2. Change directory
    ```sh
-   cd power-up-arquetipo
+   cd foodcourt-sms-ms
    ```
 3. Edit src/main/resources/application.yml and change the Twilio credentials
    ```sh
@@ -48,7 +47,7 @@ To get a local copy up and running follow these steps.
 ## Usage
 
 1. Right-click the class PowerUpApplication and choose Run
-2. Open [http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html) in your web browser
+2. Open [http://localhost:8083/swagger-ui/index.html](http://localhost:8083/swagger-ui/index.html) in your web browser
 
 <!-- ROADMAP -->
 ## Tests
